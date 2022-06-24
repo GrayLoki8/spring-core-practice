@@ -9,6 +9,8 @@ public class Test {
         MusicPlayer musicPlayer = context.getBean("musicPlayer", MusicPlayer.class);
         musicPlayer.playMusic();
        // MusicPlayer musicPlayer=new MusicPlayer(music);
+        System.out.println(musicPlayer.getName());
+        System.out.println(musicPlayer.getVolume());
         context.close();
     }
 }
