@@ -1,4 +1,4 @@
-package ua.grayloki8.spring;
+package ua.grayloki8.spring.test;
 
 public class TestBean {
     private String name;

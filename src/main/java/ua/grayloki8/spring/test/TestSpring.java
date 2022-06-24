@@ -1,4 +1,4 @@
-package ua.grayloki8.spring;
+package ua.grayloki8.spring.test;
 
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
