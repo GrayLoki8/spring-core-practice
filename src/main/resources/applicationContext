@@ -11,7 +11,9 @@
     </bean>
 
     <bean id="musicBean"
-          class="ua.grayloki8.spring.musicplayer.ClassicalMusic">
+          class="ua.grayloki8.spring.musicplayer.ClassicalMusic"
+    init-method="doMyInit"
+    destroy-method="doMyDestroy">
     </bean>
     <bean id="musicPlayer"
           class="ua.grayloki8.spring.musicplayer.MusicPlayer"
