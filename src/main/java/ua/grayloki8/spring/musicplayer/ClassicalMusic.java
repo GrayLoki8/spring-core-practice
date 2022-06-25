@@ -1,17 +1,10 @@
 package ua.grayloki8.spring.musicplayer;
 
-public class ClassicalMusic implements Music {
-    private ClassicalMusic(){}
-    public static ClassicalMusic getClassicalMusic(){
-        return new ClassicalMusic();
-    }
+import org.springframework.stereotype.Component;
 
-    public void doMyInit(){
-        System.out.println("Doing my initialization");
-    }
-    public void doMyDestroy(){
-        System.out.println("Doing my destruction");
-    }
+@Component
+public class ClassicalMusic implements Music {
+
 
     @Override
     public String getSong() {

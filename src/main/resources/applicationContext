@@ -3,8 +3,9 @@
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xmlns:context="http://www.springframework.org/schema/context"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
-
-    <context:property-placeholder location="musicPlayer.properties"/>
+    <!--on scan of bean in package-->
+    <context:component-scan base-package="ua.grayloki8.spring"/>
+  <!--  <context:property-placeholder location="musicPlayer.properties"/>
     <bean id="testBean" class="ua.grayloki8.spring.test.TestBean">
 
         <constructor-arg value="Loki"/>
@@ -19,9 +20,10 @@
     <bean id="musicPlayer"
           class="ua.grayloki8.spring.musicplayer.MusicPlayer"
     >
-      <!--  <constructor-arg ref="musicBean"/>-->
+      &lt;!&ndash;  <constructor-arg ref="musicBean"/>&ndash;&gt;
         <property name="music" ref="musicBean"/>
         <property name="name" value="${musicPlayer.name}"/>
         <property name="volume" value="${musicPlayer.volume}"/>
-    </bean>
+    </bean>-->
+
 </beans>

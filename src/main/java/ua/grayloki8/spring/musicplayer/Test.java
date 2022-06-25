@@ -6,11 +6,13 @@ import ua.grayloki8.spring.test.TestBean;
 public class Test {
     public static void main(String[] args) {
         ClassPathXmlApplicationContext context=new ClassPathXmlApplicationContext("applicationContext");
-        MusicPlayer musicPlayer = context.getBean("musicPlayer", MusicPlayer.class);
+        ClassicalMusic musicBean = context.getBean("classicalMusic", ClassicalMusic.class);
+        System.out.println(musicBean.getSong());
+     /*   MusicPlayer musicPlayer = context.getBean("musicPlayer", MusicPlayer.class);
         musicPlayer.playMusic();
        // MusicPlayer musicPlayer=new MusicPlayer(music);
         System.out.println(musicPlayer.getName());
-        System.out.println(musicPlayer.getVolume());
+        System.out.println(musicPlayer.getVolume());*/
         context.close();
     }
 }
