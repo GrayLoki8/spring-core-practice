@@ -6,8 +6,8 @@ import ua.grayloki8.spring.test.TestBean;
 public class Test {
     public static void main(String[] args) {
         ClassPathXmlApplicationContext context=new ClassPathXmlApplicationContext("applicationContext");
-        ClassicalMusic musicBean = context.getBean("classicalMusic", ClassicalMusic.class);
-        System.out.println(musicBean.getSong());
+        MusicPlayer musicPlayer = context.getBean("musicPlayer", MusicPlayer.class);
+      musicPlayer.playMusic();
      /*   MusicPlayer musicPlayer = context.getBean("musicPlayer", MusicPlayer.class);
         musicPlayer.playMusic();
        // MusicPlayer musicPlayer=new MusicPlayer(music);

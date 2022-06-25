@@ -1,6 +1,13 @@
 package ua.grayloki8.spring.musicplayer;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.stereotype.Component;
+
+@Component
 public class MusicPlayer {
+    @Qualifier("classicalMusic")
+    @Autowired
     private Music music;
     private String name;
     private int volume;
